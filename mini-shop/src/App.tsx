@@ -1,11 +1,24 @@
-import { Button } from "./components/ui/button";
+import { BrowserRouter as Router, Routes, Route } from "react-router";
+import Home from "@/pages/Home";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import Shop from "@/pages/Shop";
+import Cart from "@/pages/Cart";
+import NotFound from "./pages/404";
 
 function App() {
   return (
     <>
-      <div className="flex min-h-svh flex-col items-center justify-center">
-        <Button>Click me</Button>
-      </div>
+      <Header />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Router>
+      <Footer />
     </>
   );
 }
