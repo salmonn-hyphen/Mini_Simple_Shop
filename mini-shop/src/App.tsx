@@ -9,16 +9,16 @@ import NotFound from "./pages/404";
 function App() {
   return (
     <>
-      <Header />
       <Router>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer />
       </Router>
-      <Footer />
     </>
   );
 }
