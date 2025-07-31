@@ -3,8 +3,8 @@ import { Link } from "react-router";
 function Home() {
   return (
     <section className="flex grow items-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="mb-4 text-3xl font-bold md:text-5xl">
+      <div className="p-8 text-center md:p-18 md:text-left">
+        <h1 className="mb-4 text-3xl font-bold md:text-6xl">
           Welcome to Techno City
         </h1>
         <p className="mb-8 text-lg text-gray-600 md:text-xl">
