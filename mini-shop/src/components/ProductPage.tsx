@@ -31,7 +31,7 @@ const ProductPage = ({ name, price, image }: typeProduct) => {
         <div className="mt-2 flex justify-between">
           <div className="">
             <h3 className="text-lg font-bold">{name}</h3>
-            <p className="text-gray-500">{price}</p>
+            <p className="text-gray-500">${price}</p>
           </div>
           <button className="rounded-md bg-sky-500 px-4 py-2 text-white hover:bg-sky-600">
             Add to Cart
